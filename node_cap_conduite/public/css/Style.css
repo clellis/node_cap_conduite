@@ -1,0 +1,206 @@
+@CHARSET "UTF-8";
+
+/* definition des generales des balises */
+body
+{
+	background: #333333 !important;
+}
+
+/* definition de la page d'acceuil (page de structure generale) */
+
+
+.banniere
+{
+	position: relative;
+	height: 200px;
+
+	color: white;
+	background: black;
+	overflow: hidden;
+}
+
+.titre1
+{
+	position: absolute;
+	display: block;
+	left: -72%;
+	top: 10px;
+}
+
+.titre2
+{
+	position: absolute;
+	display: block;
+	left: 28%;
+	top: 40px;
+}
+
+.logo1
+{
+	position: absolute;
+/* 	background: black; */
+	text-align: center;
+/* 	color: white; */
+	left: 1%;
+	top: 200px;
+	width: 140px;
+	height: 30px;
+}
+
+.container-fluid
+{
+	padding: 0px 0px 0px 0px !important;
+}
+
+.navbar-collapse.collapse {
+	text-align: center;
+}
+
+.navbar-nav > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar-nav > li > a {
+  padding-top: 3px !important;
+  padding-bottom: 8px !important;
+}
+.navbar-nav > li > a > span{
+  font-size: x-large;
+  font-family: Georgia;
+}
+
+#nav_bar{
+	padding: 0px 0px 0px 0px !important;
+	height: 68px !important;
+	border: 1px solid black;
+}
+
+#menu{
+	background: #333333;
+	display: inline-block;
+    float: none !important;
+/*     font-size: x-large !important; */
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 0%;
+	border: 1px solid black;
+}
+
+/* #menu_header{ */
+/* /* 	position: relative; */ */
+/* 	height: 60px; */
+/* 	width: 17%; */
+/* 	background: green; */
+/* } */
+
+/* #menu_footer{ */
+/* /* 	position: relative; */ */
+/* 	height: 60px; */
+/* 	width: 18%; */
+/* 	background: green; */
+/* } */
+
+.button a span
+{
+/* 	position: relative; */
+/* 	top: 5px; */
+	
+}
+
+.button
+{
+/* 	position: relative; */
+}
+
+.contenu
+{
+/* 	background: #333333; */
+/* 	position: relative; */
+	text-align: center;
+}
+
+.contenu div
+{
+	position: relative;
+	left: 50%;
+	margin-left: -25%;
+	width: 50%;
+}
+
+.info
+{
+	position: relative;
+	color: white;
+	background: black;
+	height: 75px;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: small;
+}
+
+.info span
+{
+	position: relative;
+	top: 60%;
+}
+
+.info span a
+{
+	color: green;
+}
+
+/* definition des infobulles */
+span#infoBulle{
+	position:absolute;
+    margin-top:-130px;
+    margin-left:-55px;
+    height: 80px;
+    width: 230px;
+    color: #140C6B;
+    background: white; 
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+	z-index: 1;
+}
+
+/* Agencement des paragraphe a l'interieur des page */
+.paragraphe
+{
+	background: #333333;
+}
+
+/* page d'ACCEUIL */
+#accueil_paragraphe_1
+{
+/* 	height: 125px; */
+	font-size: larger;
+	
+/* 	background: purple; */
+}
+#accueil_paragraphe_1 span
+{
+	position: relative;
+	top: 10%;
+}
+
+#presta_paragraphe_1
+{
+		
+}
+#presta_paragraphe_1 span
+{
+		
+}
+
+#contact_paragraphe_1
+{
+		
+}
+#contact_paragraphe_1 span
+{
+		
+}
