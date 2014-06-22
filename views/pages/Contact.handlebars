@@ -1,0 +1,24 @@
+<div id="contact_paragraphe_1">
+	<span> {{t 'texte_contact_paragraphe_1'}} </span>
+</div>
+
+
+<form id="form_contact" name="form_contact" method="post" action="/contact/envoyer_mail">
+	
+	<h2>Formulaire de contact</h2>
+	
+	Votre Nom :<br/>
+	<input id="nom" name="form_nom" type="text" size="65" onBlur="javascript:controleAlpha(this)" /><br/><br/>
+		
+	Votre adresse mail :<br/>
+	<input id="eMail" name="form_mail" type="text" size="65" onBlur="javascript:controleMail(this)" /><br/><br/>
+		
+	Sujet :<br/>
+	<input id="sujet" name="form_sujet" type="text" size="65" onBlur="javascript:activSubmit()" /><br/><br/>
+
+	Votre message :<br/>
+	<textarea id="message" name="form_message" rows="3" cols="50" onBlur="javascript:activSubmit()"></textarea><br/><br/>
+		
+	<input id="submit" name="submit" type="submit" value="Envoyer le message" disabled /><br/><br/>
+	
+</form>
