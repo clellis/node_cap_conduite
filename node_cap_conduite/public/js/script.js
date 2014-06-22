@@ -4,7 +4,7 @@ $(function()
 	
 	//////////////////////////////// NAVIGATION /////////////////////////////////
 	//Animation style button
-	$('.button').hover(function(){
+	$('.navbar-nav > li > a').hover(function(){
 		$(this).addClass("ui-state-hover");}, function(){
 		$(this).removeClass("ui-state-hover");
 	}).mousedown(function(){
@@ -15,6 +15,20 @@ $(function()
 		$(this).addClass("ui-state-focus");
 	});
 	
+	$("#submenu-parent").hover(function(){
+		$("#submenu").show();
+	}).click(function(){
+		$("#submenu").toggle();
+	});
+	$("#submenu-superparent").hover(function(){
+		$("#submenu").hide();
+	});
+	
+	if( $("#defilbar").is(":visible")){
+		$("#defilbar").removeClass("contenu")
+			.removeClass("ui-widget")
+			.removeClass("ui-widget-content");
+	};
 	//////////////////////////////////////////////////////////////////////////////
 	
 	//Apparition et gestion des drapeaux et du logo1
