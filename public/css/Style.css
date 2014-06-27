@@ -13,7 +13,8 @@ body
 {
 	position: relative;
 	height: 200px;
-
+	
+	padding-top: 35px;
 	color: white;
 	background: black;
 	overflow: hidden;
@@ -121,33 +122,35 @@ body
 	color: #333333;
 }
 
-#defilbar{
-	display: block;
-	position: absolute;
-	background-color: #60d101;
-	width: 2000px;
-	left: 0;
-	overflow: hidden;
-	top: 270px;
-	font-size: 1.1em;
-	font-family: Georgia;
-}
-
 .contenu
 {
-/* 	background: #333333; */
+/* 	background: #333333 !important; */
 /* 	position: relative; */
-	padding-top: 43px;
+	padding-top: 20px;
 	text-align: center;
 }
 
 .contenu div
 {
 	position: relative;
-	left: 50%;
-	margin-left: -25%;
-	width: 50%;
-	height: 400px;
+/* 	left: 50%; */
+/* 	margin-left: -25%; */
+/* 	width: 50%; */
+/* 	height: 400px; */
+}
+
+.thumbails_accueil{
+	left: -90px;
+}
+
+.panel-heading_me
+{
+	background-color: #60d101;
+	color: #333;
+	padding: 10px 15px;
+	border-bottom: 1px solid black;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 }
 
 .info

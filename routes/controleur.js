@@ -7,9 +7,21 @@ exports.accueil = function(req, res){
 		titre	: 'Cap Conduite - Accueil'});
 };
 
-exports.prestation = function(req, res){
-	res.render('./pages/Prestation', {
-		titre	: 'Cap Conduite - Nos prestations'});
+exports.permis_b = function(req, res){
+	res.render('./pages/PermisB', {
+		titre	: 'Cap Conduite - Permis B'});
+};
+exports.permis_aac = function(req, res){
+	res.render('./pages/PermisAAC', {
+		titre	: 'Cap Conduite - Permis AAC'});
+};
+exports.perfectionnement = function(req, res){
+	res.render('./pages/Perfectionnement', {
+		titre	: 'Cap Conduite - Perfectionnement'});
+};
+exports.carte = function(req, res){
+	res.render('./pages/Carte', {
+		titre	: 'Cap Conduite - A la carte'});
 };
 
 exports.localiser = function(req, res){

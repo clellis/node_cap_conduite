@@ -50,6 +50,10 @@ $(function()
 			return false;
 		}
 	);
+	
+	$(function(){
+	    $("#defilbar").liScroll();
+	});
 });
 
 function initBan()

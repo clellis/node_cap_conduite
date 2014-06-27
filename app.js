@@ -1,4 +1,3 @@
-
 /**
  * Dependance du module.
  */
@@ -88,7 +87,10 @@ app.set('view engine', 'handlebars');
 app.get('/', routes.accueil)
 	.get('/accueil', routes.accueil);
 
-app.get('/prestation', routes.prestation);
+app.get('/permis_b', routes.permis_b);
+app.get('/permis_aac', routes.permis_aac);
+app.get('/perfectionnement', routes.perfectionnement);
+app.get('/carte', routes.carte);
 
 app.get('/localiser', routes.localiser);
 
