@@ -1,0 +1,44 @@
+{
+	"bouton_acceuil"			: "Accueil",
+	"bouton_prestation"			: "Nos prestations",
+	"bouton_localiser"			: "Nous localiser",
+	"bouton_contact"			: "Nous contacter",
+	
+	"texte_accueil_paragraphe_1": "Bienvenue chez Cap Conduite",
+	
+	"texte_presta_paragraphe_1"	: "Page Prestation",
+	
+	"texte_contact_paragraphe_1": "Page Contact",
+	
+	"info_text_1"				: "Site créé par: ",
+	"info_text_2"				: " e-DevInfo",
+	
+	
+	"BCi_obs_text_1"			: "Tout d'abord, il faut OBSERVER et faire un état des lieux.",
+	"BCi_obs_text_2"			: "On appel cela un BILAN CIRCONSTANCIEL.",
+	
+	"BCi_rapport_text_1"		: "Que s'est-il passé ?",
+	"BCi_rapport_1_text_1"		: "Interroger les témoins, la victime ou son entourage pour déterminer la nature de l’intervention ou les circonstance de l’accident ou de l’affection.",
+	"BCi_rapport_1_text_2"		: "Cela permet à l’équipe de secouriste de s’imprégner de l’intervention afin de mieux anticiper les gestes et conduites à tenir afférentes.",
+	
+	"BCi_danger_text_1"			: "Existe-t-il un danger ?",
+	"BCi_danger_1_text_1"		: "C’est un accident de la circulation.",
+	"BCi_danger_2_text_1"		: "Ce n’est pas un accident de la circulation.",
+	
+	"BCi_information_text_1"	: "Les informations en ma possession \t sont elles exactes ?",
+	"BCi_information_1_text_1"	: "L’adresse est elle exacte? \t Le nombre et l’état de mes victimes est il exacte?",
+	
+	"BCi_secours_text_1"		: "Les secours sont-ils suffisants ?",
+	"BCi_secours_1_text_1"		: "Demander des renforts si les secours sur place sont insuffisant en moyen humains et matériel. En règle général: 1 VSAV = 2 blessés légers ou 1 blessé grave, 1 urgence vitale non stabilisée ou traitée = un renfort de médecin.",
+	
+    "Hello %s, how are you today?": "Bonjour %s, how are you today?",
+    "Hello %s, how are you today? How was your %s.": "Bonjour %s, how are you today? How was your %s.",
+    "%s cat": {
+        "one": "%s cat",
+        "other": "%s cats"
+    },
+    "There is one monkey in the %%s": {
+        "one": "There is one monkey in the %%s",
+        "other": "There are %d monkeys in the %%s"
+    }
+}

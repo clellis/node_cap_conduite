@@ -1,0 +1,24 @@
+{
+  "name": "node_cap_conduite",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express"				: "*",
+    "handlebars"			: "*",
+    "express3-handlebars"	: "*",
+    "elasticsearch"			: "*",
+    "connect"				: "*",
+    "supervisor"			: "*",
+    "express-session"		: "*",
+    "cookie-parser"			: "*",
+    "errorhandler"			: "*",
+    "body-parser"			: "*",
+    "nodemailer"			: "*",
+    "i18next"				: "*",
+    "bower"					: "*",
+    "extended-console"		: "*"
+  }
+}
