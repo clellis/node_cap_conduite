@@ -3,7 +3,7 @@ DD_roundies.addRule('.logo', '0px 10px', true);
 DD_roundies.addRule('.navigation a', '5px', true);
 DD_roundies.addRule('.info', '0px 0px 5px 5px', true);
 DD_roundies.addRule('.page', '5px', true);
-DD_roundies.addRule('.page', '5px', true);
+DD_roundies.addRule('.form-input', '5px', true);
 DD_roundies.addRule('.corps_con', '10px', true);
 
 DD_roundies.addRule('.corps_loc', '10px', true);

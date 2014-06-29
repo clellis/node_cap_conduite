@@ -95,7 +95,7 @@ app.get('/carte', routes.carte);
 app.get('/localiser', routes.localiser);
 
 app.get('/contact', routes.contact);
-app.get('/contact/envoyer_mail', routes.envoyer_mail);
+app.post('/envoyer_mail', routes.envoyer_mail);
 
 
 

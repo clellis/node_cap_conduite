@@ -1,24 +1,54 @@
-<div id="contact_paragraphe_1">
-	<span> {{t 'texte_contact_paragraphe_1'}} </span>
+<div class="row">
+	<div class="col-md-offset-2 col-md-9 decalage_gauche">
+		<div class="panel panel-default">
+			<div class="panel-heading_me">
+		    	<h2 class="panel-title">NOUS CONTACTER</h2>
+		  	</div>
+			<div class="panel-body">
+				<h2 class="" style="">Formulaire de contact</h2>
+				
+				</br>
+				
+				Pour toutes demandes d'informations veuillez utilisez notre formulaire de contact :
+				
+				</br></br>
+				
+				<form id="form_contact" name="form_contact" method="post" role="form" action="/envoyer_mail">
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_nom">Votre Nom :</label>
+						</br>
+					    <input class="col-md-offset-3 col-md-6 form-input" type="text" name="form_contact_nom" class="form-control" id="form_contact_nom" placeholder="Saisissez votre nom"/>
+					</div>
+					
+					</br></br>
+									
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_email">Votre eMail :</label>
+					    <input class="col-md-offset-3 col-md-6 form-input" type="email" name="form_contact_email" class="form-control" id="form_contact_email" placeholder="Saisissez votre Adresse mail"/>
+					</div>
+					
+					</br></br></br>
+					
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_sujet">Le Sujet :</label>
+					    <input class="col-md-offset-3 col-md-6 form-input" type="text" name="form_contact_sujet" class="form-control" id="form_contact_sujet" placeholder="Saisissez le sujet de votre mail"/>
+					</div>
+					
+					</br></br></br>
+					
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_message">Votre Message :</label>
+					    <textarea class="col-md-offset-3 col-md-6 form-input" name="form_contact_message" rows="4" class="form-control" id="form_contact_message" placeholder="Saisissez le message de votre mail"></textarea>
+					</div>
+					
+					</br></br></br></br></br></br></br>
+					
+					<button type="submit" class="btn btn-default form-btn">Envoyer le message</button>
+					<br/><br/>
+				</form>
+				
+		    </div>
+		</div>
+	</div>
 </div>
-
-
-<form id="form_contact" name="form_contact" method="post" action="/contact/envoyer_mail">
-	
-	<h2>Formulaire de contact</h2>
-	
-	Votre Nom :<br/>
-	<input id="nom" name="form_nom" type="text" size="65" onBlur="javascript:controleAlpha(this)" /><br/><br/>
-		
-	Votre adresse mail :<br/>
-	<input id="eMail" name="form_mail" type="text" size="65" onBlur="javascript:controleMail(this)" /><br/><br/>
-		
-	Sujet :<br/>
-	<input id="sujet" name="form_sujet" type="text" size="65" onBlur="javascript:activSubmit()" /><br/><br/>
-
-	Votre message :<br/>
-	<textarea id="message" name="form_message" rows="3" cols="50" onBlur="javascript:activSubmit()"></textarea><br/><br/>
-		
-	<input id="submit" name="submit" type="submit" value="Envoyer le message" disabled /><br/><br/>
-	
-</form>
+</br>

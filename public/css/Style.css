@@ -101,9 +101,9 @@ body
 	position: relative;
 	padding-top: 9px;
 	height: 56px;
-	width: 16%;
+/* 	width: 16%; */
 	margin-left: -16%;
-	border: 1px solid black;
+/* 	border: 1px solid black; */
 	color: #60d101;
 	font-family: Georgia;
 	font-weight: bold;
@@ -139,8 +139,17 @@ body
 /* 	height: 400px; */
 }
 
-.thumbails_accueil{
-	left: -90px;
+.decalage_gauche{
+	left: -67px;
+}
+
+.form-input{
+	color: black;
+	font-family: Georgia !important;
+}
+
+.form-btn{
+	font-family: Georgia !important;
 }
 
 .panel-heading_me
@@ -222,10 +231,12 @@ span#infoBulle{
 		
 }
 
-#contact_paragraphe_1
+.plan
 {
-		
+	color: #0000FF;
+	text-align: left;;
 }
+
 #contact_paragraphe_1 span
 {
 		

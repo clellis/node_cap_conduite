@@ -4786,14 +4786,60 @@ a.list-group-item-danger.active:focus {
   font: normal 1.1em Georgia;
   border: 1px solid black;
   border-radius: 4px;
-/*   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
-/*           box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
+
 .panel-body {
   padding: 15px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.panel-body div h2{
+  color: #60d101;
+  font-weight: bold;
+  font-style:italic;
+}
+
+.panel-body div ul{
+  text-align: justify;
+  color: #60d101;
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.panel-body div ul li{
+  padding-top: 2%;
+}
+
+.panel-body div ul li span{
+  color: white;
+  font-style: italic;
+}
+
+.panel-body h2{
+  color: #60d101;
+  font-weight: bold;
+  font-style:italic;
+}
+
+.panel-body ul{
+  text-align: justify;
+  color: #60d101;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.panel-body ul li{
+  padding-top: 2%;
+}
+
+.panel-body ul li span{
+  color: white;
+  font-style: italic;
+}
+
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid black;
