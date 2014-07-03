@@ -31,13 +31,7 @@ $(function()
 	};
 	//////////////////////////////////////////////////////////////////////////////
 	
-	//Apparition et gestion des drapeaux et du logo1
-	$('.logo1').delay(4700).animate({top:"35px"},1000);
-	
-	//Initialisation de la banniere
-	initBan();
-		
-	//Infobulles
+	//////////////////// Infobulles ///////////////////////
 	$("a#infoBulle").mouseover(function() 
 		{
 			$(this).next("#infoBulle").css("transform","scale(1) rotate(0)").css("opacity","1");
@@ -50,10 +44,17 @@ $(function()
 			return false;
 		}
 	);
+	//////////////////////////////////////////////////////
 	
+	///////// Tab //////////////
+//	$('#nav-tabs').tab('show')
+	////////////////////////////
+	
+	///////////// Defil Bar ///////////
 	$(function(){
 	    $("#defilbar").liScroll();
 	});
+	////////////////////////////////////
 });
 
 function initBan()

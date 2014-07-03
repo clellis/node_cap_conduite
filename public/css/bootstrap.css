@@ -3453,11 +3453,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  font: normal 1.1em Georgia;
+  background-color: #60d101;
 }
 .nav > li {
   position: relative;
-  display: block;
+  display: block; 
 }
+.nav > li > a > h2{
+/*   color: #60d101; */
+  font-weight: bold;
+  font-style:italic;
+}
+
 .nav > li > a {
   position: relative;
   display: block;
