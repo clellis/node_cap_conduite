@@ -71,8 +71,8 @@ app.use(bodyParser());
 app.use(i18n.handle);
 
 //all environments
-app.set('port', process.env.PORT || 4000);
-//app.set('port', 5001);
+//app.set('port', process.env.PORT || 4000);
+app.set('port', 5001);
 app.set('views', __dirname + '/views');
 
 app.use(express.static(path.join(__dirname, 'public'))); //ajout des fichiers additionnel necessaire
