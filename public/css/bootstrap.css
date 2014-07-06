@@ -84,7 +84,7 @@ sub {
   bottom: -.25em;
 }
 img {
-  border: 0;
+  border: 2px solid #60d101;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -306,6 +306,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  border-radius: 4px;
 }
 .img-responsive,
 .thumbnail > img,
@@ -403,8 +404,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 h1 small,
 .h1 small,
@@ -3453,8 +3454,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  font: normal 1.1em Georgia;
-  background-color: #60d101;
+  font: normal 1em Georgia;
+/*   background-color: #60d101; */
 }
 .nav > li {
   position: relative;
@@ -3469,7 +3470,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -3509,23 +3509,38 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-  margin-right: 2px;
-  line-height: 1.42857143;
+  margin-right: 5px;
+  margin-top: 2px;
+/*   line-height: 1.2em; */
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
+  background-color: #333333;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: -5px;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eee #eee #ddd;
+/*   border-color: #eee #eee #ddd; */
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #60d101;
+/*   border: 1px solid #ddd; */
   border-bottom-color: transparent;
 }
+.nav-tabs > li > a > h2{
+  color: white !important;
+}
+
+.nav-tabs > li.active > a > h2,
+.nav-tabs > li > a:hover > h2,
+.nav-tabs > li > a:focus > h2 {
+  color: #333333 !important;
+}
+
 .nav-tabs.nav-justified {
   width: 100%;
   border-bottom: 0;
@@ -4423,7 +4438,7 @@ a.list-group-item.active > .badge,
 }
 .thumbnail > img,
 .thumbnail a > img {
-  margin-top: 8%;
+  margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
 }

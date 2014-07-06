@@ -72,6 +72,7 @@ app.use(i18n.handle);
 
 //all environments
 app.set('port', process.env.PORT || 4000);
+//app.set('port', 5001);
 app.set('views', __dirname + '/views');
 
 app.use(express.static(path.join(__dirname, 'public'))); //ajout des fichiers additionnel necessaire
@@ -92,9 +93,12 @@ app.get('/permis_aac', routes.permis_aac);
 app.get('/perfectionnement', routes.perfectionnement);
 app.get('/carte', routes.carte);
 
+app.get('/permis_bsr', routes.permis_bsr);
+
 app.get('/localiser', routes.localiser);
 
-app.get('/contact', routes.contact);
+app.get('/recuperation', routes.recuperation);
+
 app.post('/envoyer_mail', routes.envoyer_mail);
 
 

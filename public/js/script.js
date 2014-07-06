@@ -15,13 +15,22 @@ $(function()
 		$(this).addClass("ui-state-focus");
 	});
 	
-	$("#submenu-parent").hover(function(){
-		$("#submenu").show();
+	$("#submenu-parent-auto").hover(function(){
+		$("#submenu-auto").show();
 	}).click(function(){
-		$("#submenu").toggle();
+		$("#submenu-auto").toggle();
 	});
-	$("#submenu-superparent").hover(function(){
-		$("#submenu").hide();
+	$("#submenu-superparent-auto").hover(function(){
+		$("#submenu-auto").hide();
+	});
+	
+	$("#submenu-parent-moto").hover(function(){
+		$("#submenu-moto").show();
+	}).click(function(){
+		$("#submenu-moto").toggle();
+	});
+	$("#submenu-superparent-moto").hover(function(){
+		$("#submenu-moto").hide();
 	});
 	
 	if( $("#defilbar").is(":visible")){
@@ -46,14 +55,17 @@ $(function()
 	);
 	//////////////////////////////////////////////////////
 	
-	///////// Tab //////////////
-//	$('#nav-tabs').tab('show')
-	////////////////////////////
-	
-	///////////// Defil Bar ///////////
+	///////////// Fonctions //////////////
 	$(function(){
 	    $("#defilbar").liScroll();
 	});
+	
+	$("#button_envoyer_mail").click(function(){
+		  $("#row_envoyer_mail").toggle(500);
+	});
+	
+	
+	
 	////////////////////////////////////
 });
 

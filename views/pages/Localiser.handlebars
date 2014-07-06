@@ -1,53 +1,116 @@
 <div class="row">
+	{{#if message}}
+		<div class="col-md-offset-2 col-md-9 decalage_gauche">
+			<div class="alert alert-success" role="alert">
+				{{message}}
+			</div>
+		</div>
+	{{/if}}
 	<div class="col-md-offset-2 col-md-9 decalage_gauche">
 		<div class="panel panel-default">
 			<div class="panel-heading_me">
 		    	<h2 class="panel-title">HORAIRES/CONTACT</h2>
 		  	</div>
 			<div class="panel-body">
-				<div class="col-md-offset-1 col-md-6">
+				<div class="col-md-offset-1 col-md-6 decalage_gauche">
 					<h2 class="" style="">Horaires d'ouverture</h2>
 					
-					</br>
+					<br/>
 					
 	        		Notre auto-école est ouverte :
-	        		</br>
+	        		<br/>
 	        		<ul style="">
-			        	<li>Du Lundi au Vendredi<span> de 9h30 à 13H00 et de 15h00 à 19H00</span></li>
-			        	<li>Le Samedi matin<span> de 9h30 à 13h00</span></li>
+			        	<li>Du Lundi au Vendredi<span> de 10h00 à 13h00 et de 15h00 à 19h00</span></li>
+			        	<li>Le Samedi matin<span> de 10h00 à 13h00</span></li>
 			        </ul>
 			        
-	        		</br></br>
+	        		<br/><br/>
 					
 					Les cours de conduite sont dispensés :
-	        		</br>
+	        		<br/>
 	        		<ul style="">
-			        	<li>Du Lundi au Vendredi<span> de 9h30 à 13H00</span></li>
-			        	<li>Le Samedi matin<span> de 9h00 à 13h00 </br><small>pour les personnes ne pouvant malheureusement pas se libérer en semaine</small></span></li>
+			        	<li>Du Lundi au Vendredi<span> de 8h00 à 19h00</span></li>
+			        	<li>Le Samedi matin<span> de 8h00 à 13h00 <br/><small>pour les personnes ne pouvant malheureusement pas se libérer en semaine</small></span></li>
 			        </ul>
 			        
-	        		</br>
+	        		<br/>
 	        		
 				</div>
-				<div class="col-md-offset-1 col-md-4">
-					<h2 class="" style="">Téléphone</h2>
-					
-					</br>
-					
-	        		Pour tout renseignement sur nos différentes formations, contactez-nous au :
-	        		</br></br>
-	        		{{t "tel_cap_conduite"}}
-				
-					
-					</br></br>
-					
-					<h2 class="" style="">Fax</h2>
-					
-					</br>
-					
-		        	(+33)823 124 XXX
+				<div class="col-md-offset-1 col-md-4 decalage_gauche">
+					<h2 class="">Nous Contacter</h2>
+					<br/>
+					Pour tout renseignement sur nos différentes formations, contactez-nous :
+					<br/>
+					<br/>
+					<span class="texte_semi_important"> Téléphone : </span><br/>
+					{{t 'tel_cap_conduite'}}<br/>
+					<br/>
+					<span class="texte_semi_important"> Mobile : </span><br/>
+					{{t 'mob_cap_conduite'}}<br/>
+					<br/>
+					<span class="texte_semi_important"> eMail : </span><br/>
+					capconduite@outlook.com <br/>
 					
 			    </div>
+
+		    </div>
+		    <button type="button" class="btn btn-default form-btn" href="#row_envoyer_mail" id="button_envoyer_mail">
+		    	Cliquer ici pour ouvrir le formulaire d'envoi de mail
+		    </button>
+			<br/><br/>
+		</div>
+	</div>
+</div>
+
+<div class="row" id="row_envoyer_mail">
+	<div class="col-md-offset-2 col-md-9 decalage_gauche">
+		<div class="panel panel-default">
+			<div class="panel-heading_me">
+		    	<h2 class="panel-title">NOUS ENVOYER UN MAIL</h2>
+		  	</div>
+			<div class="panel-body">
+				<h2 class="" style="">Formulaire de contact</h2>
+				
+				<br/>
+				
+				Pour toutes demandes d'informations veuillez utilisez notre formulaire de contact :
+				
+				<br/><br/>
+				
+				<form id="form_contact" name="form_contact" method="post" role="form" action="/envoyer_mail">
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_nom">Votre Nom :</label>
+						<br/>
+					    <input class="col-md-offset-3 col-md-6 form-input" type="text" name="form_contact_nom" class="form-control" id="form_contact_nom" placeholder="Saisissez votre nom"/>
+					</div>
+					
+					<br/><br/>
+									
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_email">Votre eMail :</label>
+					    <input class="col-md-offset-3 col-md-6 form-input" type="email" name="form_contact_email" class="form-control" id="form_contact_email" placeholder="Saisissez votre Adresse mail"/>
+					</div>
+					
+					<br/><br/><br/>
+					
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_sujet">Le Sujet :</label>
+					    <input class="col-md-offset-3 col-md-6 form-input" type="text" name="form_contact_sujet" class="form-control" id="form_contact_sujet" placeholder="Saisissez le sujet de votre mail"/>
+					</div>
+					
+					<br/><br/><br/>
+					
+					<div class="form-group">
+						<label class="col-md-offset-3 col-md-6" for="form_contact_message">Votre Message :</label>
+					    <textarea class="col-md-offset-3 col-md-6 form-input" name="form_contact_message" rows="4" class="form-control" id="form_contact_message" placeholder="Saisissez le message de votre mail"></textarea>
+					</div>
+					
+					<br/><br/><br/><br/><br/><br/><br/>
+					
+					<button type="submit" class="btn btn-default form-btn">Envoyer le message</button>
+					<br/><br/>
+				</form>
+				
 		    </div>
 		</div>
 	</div>
@@ -60,11 +123,11 @@
 		    	<h2 class="panel-title">PLAN</h2>
 		    </div>
 		    <div class="panel-body">
-		    	<div class="col-md-8 ">
+		    	<div class="col-md-6 ">
 		    		
 		    		<br/>
 		    		
-		      		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2903.340511442615!2d5.3999482!3d43.3071308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf6497db7e85%3A0xad3782c75f5d52f3!2s128+Avenue+des+Chartreux!5e0!3m2!1sfr!2s!4v1403985534767" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		      		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2903.340511442615!2d5.3999482!3d43.3071308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf6497db7e85%3A0xad3782c75f5d52f3!2s128+Avenue+des+Chartreux!5e0!3m2!1sfr!2s!4v1403985534767" width="400" height="350" frameborder="0" style="border:0"></iframe>
 		      		
 		      		<br/>
 		      		
@@ -74,8 +137,8 @@
 						</a>
 					</small>
 		      	</div>
-		      	<div class="col-md-offset-0 col-md-4">
-		      		<br/><br/><br/>
+		      	<div class="col-md-offset-1 col-md-5">
+		      		<br/>
 	        		<h2 class="titre-paragraphe" style="">Adresse</h2>
 	        		
 	        		<br/>
@@ -90,7 +153,7 @@
         			
         			<div class="">
 						Métro : {{t "metro_cap_conduite"}} <br/>
-						Bus : N°95 <br/>
+						Bus : {{t "bus_cap_conduite"}} et N°41<br/>
 					</div>
 
         			<br/><br/>
@@ -102,4 +165,4 @@
 		</div>
 	</div>
 </div>
-</br>
+<br/>

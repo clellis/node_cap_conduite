@@ -25,19 +25,21 @@ exports.carte = function(req, res){
 	res.render('./pages/Carte', {
 		titre	: 'Cap Conduite - A la carte'});
 };
-
+exports.permis_bsr = function(req, res){
+	res.render('./pages/PermisBSR', {
+		titre	: 'Cap Conduite - Permis BSR'});
+};
 exports.localiser = function(req, res){
 	res.render('./pages/Localiser', {
 		titre	: 'Cap Conduite - Nous localiser'});
 };
 
-exports.contact = function(req, res){
-	res.render('./pages/Contact', {
+exports.recuperation = function(req, res){
+	res.render('./pages/Recuperation', {
 		titre	: 'Cap Conduite - Nous contacter'});
 };
 
 exports.envoyer_mail = function(req, res){
-	console.log("on rentre dedans");
 	//Capter tous les champs du formulaire
 	var nom = req.body.form_contact_nom;
 	var eMail = req.body.form_contact_email;
@@ -49,15 +51,15 @@ exports.envoyer_mail = function(req, res){
 	
 	//Créer le mail
 	var smtpTransport = nodemailer.createTransport("SMTP",{
-	    service: "Gmail",
+		service: "hotmail",
 	    auth: {
-	        user: "bigguy972@gmail.com",
-	        pass: "bigguy97"
+	        user: "capconduite@outlook.com",
+	        pass: "128chartreux"
 	    }
 	});
 	
 	var mailOptions = {
-		    from: "Cap Conduite ✔ <bigguy972@gmail.com>", // sender address
+		    from: "Cap Conduite ✔ <capconduite@outlook.com>", // sender address
 		    to: eMail, // list of receivers
 		    subject: sujet, // Subject line
 //		    text: "Hello world", // plaintext body
@@ -78,6 +80,7 @@ exports.envoyer_mail = function(req, res){
 	});
 	
 	//Revenir sur la page contact avec message d'execution
-	res.render('./pages/Contact', {
-		titre	: 'Cap Conduite - Nous contacter'});
+	res.render('./pages/Localiser', {
+		titre		: 'Cap Conduite - Nous localiser'
+		, message	: 'Le mail à été envoyé !'});
 };
