@@ -4,10 +4,11 @@
 var nodemailer = require('nodemailer');
 
 exports.accueil = function(req, res){
-//	console.log( res.__('app.name'));
 	res.render('./pages/Accueil', {
-		layout	: 'main'
-		, titre	: 'Cap Conduite - Accueil'});
+		layout				: 'main'
+		, titre				: 'Cap Conduite - Accueil'
+		, meta_description	: 'Cap Conduite, Auto-Ecole Auto dans les Chartreux à Marseille'
+		, meta_motsClefs	: 'Cap Conduite, Accueil, Auto-Ecole, Chartreux, Marseille, permis, conduite, cap, conduire, points, permis conduire, récupération points, points permis, points permis conduire'});
 };
 
 exports.permis_b = function(req, res){
