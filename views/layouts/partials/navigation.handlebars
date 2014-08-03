@@ -1,70 +1,48 @@
-<div class="navbar-header" id="navbar-header">
-	<span class="" style="font-size: 1.2em;">
+<div class="navigation-gauche col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-12 col-md-12 col-lg-2">
+	<span class="" style="">
 		Téléphone : <br/>
 		{{t 'tel_cap_conduite'}}
 	</span>
 </div>
 
-<div class="collapse navbar-collapse" role="navigation" id="nav_bar">
-	<ul class="nav navbar-nav" id="menu">
-		<li>
-			<a href="/accueil"  class="button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
-				<span class="ui-button-text">{{t 'bouton_acceuil'}}</span>
-			</a>
-		</li>
-		<li class="dropdown" id="submenu-superparent-auto">
-			<a href="#" class="dropdown-toggle button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" data-toggle="dropdown" id="submenu-parent-auto">
-				<span class="ui-button-text">
-					Auto
-					<b class="caret"></b>
-				</span>
-			</a>
-			<ul class="dropdown-menu ui-menu ui-widget-content ui-corner-all" role="menu" id="submenu-auto">
-				<li>
-					<a href="/permis_b">{{t 'permis_b'}}</a>
-				</li>
-				<li>
-					<a href="/permis_aac">{{t 'permis_aac'}}</a>
-				</li>
-				<li>
-					<a href="/perfectionnement">{{t 'perfectionnement'}}</a>
-				</li>
-				<li class="divider"></li>
-				<li>
-					<a href="/carte">{{t 'carte'}}</a>
-				</li>
-			</ul>
-		</li>
-		<!--<li class="dropdown" id="submenu-superparent-moto">
-			<a href="#" class="dropdown-toggle button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" data-toggle="dropdown" id="submenu-parent-moto">
-				<span class="ui-button-text">
-					{{t 'bouton_moto'}}
-					<b class="caret"></b>
-				</span>
-			</a>
-			<ul class="dropdown-menu ui-menu ui-widget-content ui-corner-all" role="menu" id="submenu-moto">
-				<li>
-					<a href="/permis_bsr">{{t 'permis_bsr'}}</a>
-				</li>
-			</ul>
-		</li>-->
-		<li>
-			<a href="/recuperation" class="button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
-				<span class="ui-button-text"> Récupération de points </span>
-			</a>
-		</li>
-		<li>
-			<a href="/localiser" class="button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
-				<span class="ui-button-text"> {{t 'bouton_localiser'}} </span>
-			</a>
-		</li>
-	</ul>
-	
-	<div class="navbar-right" id="navbar-footer">
-		<span class="" style="font-size: 1.2em;">
-			Mobile : <br/>
-			{{t 'mob_cap_conduite'}}
-		</span>
+<div class="navigation-centre col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-0 col-xs-12 col-sm-12 col-md-10 col-lg-8">
+	<div class="btn-toolbar" role="toolbar">
+		<div class="btn-group">
+	    	<a role="button" class="btn btn-default" href="/accueil"> {{t 'bouton_acceuil'}} </a>
+	  	</div>
+	  	<div class="btn-group">
+	    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	    	Auto
+	      	<span class="caret"></span>
+	    </button>
+	    <ul class="dropdown-menu img-background" role="menu">
+	    	<li>
+				<a href="/permis-b">{{t 'permis-b'}}</a>
+			</li>
+			<li>
+				<a href="/permis-aac">{{t 'permis-aac'}}</a>
+			</li>
+			<li>
+				<a href="/perfectionnement">{{t 'perfectionnement'}}</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="/carte">{{t 'carte'}}</a>
+			</li>
+		</ul>
+	  	</div>
+	  	<div class="btn-group">
+		    <a role="button" class="btn btn-default" href="/recuperation"> Récupération de points </a>
+		</div>
+	  	<div class="btn-group">
+	    	<a role="button" class="btn btn-default" href="/localiser"> {{t 'bouton_localiser'}} </a>
+	  	</div>
 	</div>
 </div>
 
+<div class="navigation-droite col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-xs-12 col-sm-12 col-md-12 col-lg-2">
+	<span class="" style="">
+		Mobile : <br/>
+		{{t 'mob_cap_conduite'}}
+	</span>
+</div>

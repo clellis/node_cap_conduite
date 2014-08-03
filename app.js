@@ -88,18 +88,18 @@ app.set('view engine', 'handlebars');
 app.get('/', routes.accueil)
 	.get('/accueil', routes.accueil);
 
-app.get('/permis_b', routes.permis_b);
-app.get('/permis_aac', routes.permis_aac);
+app.get('/permis-b', routes.permis_b);
+app.get('/permis-aac', routes.permis_aac);
 app.get('/perfectionnement', routes.perfectionnement);
 app.get('/carte', routes.carte);
 
-app.get('/permis_bsr', routes.permis_bsr);
+app.get('/permis-bsr', routes.permis_bsr);
 
 app.get('/localiser', routes.localiser);
 
 app.get('/recuperation', routes.recuperation);
 
-app.post('/envoyer_mail', routes.envoyer_mail);
+app.post('/envoyer-mail', routes.envoyer_mail);
 
 
 

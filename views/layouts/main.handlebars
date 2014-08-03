@@ -32,22 +32,24 @@
 	  	<script src="js/jquery.li-scroller.1.0.js"></script>
 	</head>
  	<body>
-  		<div class="page" style="overflow:hidden">
-  			<div class="banniere">
+  		<div class="container-fluid page" style="overflow:hidden">
+  			<div class="row banniere">
   				{{> banniere }}
   			</div>
   			
-  			<div class="container-fluid ui-widget-content">
+  			<div class="row img-background">
   				{{> navigation }}
 			</div>
 			
-			{{> defilbar }}
+			<span class="defilbar">
+				{{> defilbar }}
+			</span>
 			
-  			<div class="contenu ui-widget ui-widget-content">
+  			<div class="row contenu img-background">
   				{{{body}}}
 	  		</div>
 	  		
-	  		<div class="info">
+	  		<div class="row info">
 	  			{{> info }}
 	  		</div>
 		</div>

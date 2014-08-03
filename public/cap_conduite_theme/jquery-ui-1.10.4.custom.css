@@ -799,11 +799,11 @@ body .ui-tooltip {
 .ui-widget-content {
 	border: 1px solid #4a4a4a;
 	background: #000000 url("images/ui-bg_fine-grain_55_000000_60x60.png") 50% 50% repeat;
-	color: #ffffff;
+/* 	color: #ffffff; */
 }
-.ui-widget-content a {
-	color: #ffffff;
-}
+/* .ui-widget-content a { */
+/* 	color: #ffffff; */
+/* } */
 .ui-widget-header {
 	border: 1px solid #000000;
 	background: #60d101 url("images/ui-bg_gloss-wave_60_60d101_500x100.png") 50% 50% repeat-x;

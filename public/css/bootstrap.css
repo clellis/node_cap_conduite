@@ -1996,10 +1996,11 @@ select[multiple].input-lg {
 .btn {
   display: inline-block;
   padding: 6px 12px;
+/*   padding: .3em .3em; */
   margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
+/*   font-size: 14px; */
+/*   font-weight: normal; */
+/*   line-height: 1.42857143; */
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -2042,23 +2043,27 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  border-color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.33em;
+  background: #0a0a0a url("/images/ui-bg_glass_40_0a0a0a_1x400.png") 50% 50% repeat-x;
+  color: #60d101;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #ebebeb;
+  color: #60d101;
   border-color: #adadad;
+/*   font-size: 1.6em; */
+  background: #000000 url("/images/ui-bg_glass_60_000000_1x400.png") 50% 50% repeat-x;
 }
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  background-image: none;
+  background: #000000 url("/images/ui-bg_fine-grain_55_000000_60x60.png") 50% 50% repeat;
 }
 .btn-default.disabled,
 .btn-default[disabled],
@@ -3018,6 +3023,7 @@ input[type="button"].btn-block {
   display: none;
   float: left;
   min-width: 160px;
+  width: 226px;
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 14px;
@@ -3025,8 +3031,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
@@ -3046,7 +3051,7 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: #60d101;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -3167,12 +3172,12 @@ input[type="button"].btn-block {
 }
 .btn-toolbar .btn-group,
 .btn-toolbar .input-group {
-  float: left;
+  float: none;
 }
 .btn-toolbar > .btn,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
-  margin-left: 5px;
+  margin-left: 2%;
 }
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
@@ -5738,9 +5743,9 @@ button.close {
   clear: both;
 }
 .center-block {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  display: block !important;
+  float: none !important;
+  margin: 0 auto !important;
 }
 .pull-right {
   float: right !important;

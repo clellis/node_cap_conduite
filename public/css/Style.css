@@ -7,142 +7,83 @@ body
 }
 
 /* definition de la page d'acceuil (page de structure generale) */
-
+.page
+{
+	color: #ffffff;
+	font-family: Georgia !important;
+	text-align: center !important;
+	font-size: 1.2em;
+}
 
 .banniere
 {
-	position: relative;
-	height: 200px;
-	
-	padding-top: 35px;
-	color: white;
 	background: black;
-	overflow: hidden;
 }
 
-.titre1
+.img-banniere
 {
-	position: absolute;
-	display: block;
-	left: -72%;
-	top: 10px;
-}
-
-.titre2
-{
-	position: absolute;
-	display: block;
-	left: 28%;
-	top: 40px;
-}
-
-.logo1
-{
-	position: absolute;
-/* 	background: black; */
-	text-align: center;
-/* 	color: white; */
-	left: 1%;
-	top: 200px;
-	width: 140px;
-	height: 30px;
-}
-
-.container-fluid
-{
-	padding: 0px 0px 0px 0px !important;
-}
-
-.navbar-collapse.collapse {
-	text-align: center;
-}
-
-.navbar-nav > li {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.navbar-nav > li > a {
-  padding-top: 2px !important;
-  padding-bottom: 4px !important;
-}
-.navbar-nav > li > a > span{
-  font-size: 1.4em;
-  font-family: Georgia;
-}
-
-#nav_bar{
-	padding: 0px 0px 0px 0px !important;
-	height: 52px !important;
-	border: 1px solid black;
-}
-
-#menu{
-	background: #333333;
-	display: inline-block;
-    float: none !important;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 0%;
-	border: 1px solid black;
-}
-
-#navbar-header{
-	position: absolute;
-	height: 52px;
-	width: 16%;
-	color: #60d101;
-	padding-right: 2%;
-	padding-top: 3px;
-/* 	border: 1px solid black; */
-	text-align: center;
-	font-family: Georgia;
-	font-weight: bold;
-}
-
-#navbar-footer{
-	position: relative;
-	padding-right: 1%;
-	padding-top: 3px;
-	height: 52px;
-/* 	width: 16%; */
-	margin-left: -16%;
-/* 	border: 1px solid black; */
-	color: #60d101;
-	font-family: Georgia;
-	font-weight: bold;
-}
-
-#submenu-auto,
-#submenu-moto{
-	display: none;
-	width: 250px;
-	color: white !important;
-}
-
-#submenu-auto li a,
-#submenu-moto li a{
-	color: #60d101;
-}
-#submenu-auto li a:hover,
-#submenu-moto li a:hover{
-	color: #333333;
+	width: 50%;
+	margin-top: 2%;
+	margin-bottom: 1%;
 }
 
 .contenu
 {
-/* 	background: #333333 !important; */
-/* 	position: relative; */
-	padding-top: 20px;
-	text-align: center;
+	padding-top: 1%;
 }
 
-.contenu div
+.info
+{
+	background: black;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	font-family: Tahoma;
+	font-size: small;
+}
+
+.info span
 {
 	position: relative;
-/* 	left: 50%; */
-/* 	margin-left: -25%; */
-/* 	width: 50%; */
-/* 	height: 400px; */
+	top: 60%;
+}
+
+.info span a
+{
+	color: #60d101;
+}
+
+
+.img-background{
+	border: 1px solid #4a4a4a;
+	background: #000000 url("/images/ui-bg_fine-grain_55_000000_60x60.png") 50% 50% repeat;
+}
+
+.navigation-gauche{
+	font-size: 1.0em;
+	color: #60d101;
+	font-weight: bold;
+/* 	text-align: left; */
+}
+
+.navigation-centre{
+/* 	position: relative; */
+	margin-top: 1px;
+	margin-bottom: 1px;
+	background-color: #333333;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/* .test */
+/* { */
+/* 	margin-left: 8% !important; */
+/* 	margin-right: 8% !important; */
+/* } */
+
+.navigation-droite{
+	font-size: 1.0em;
+	color: #60d101;
+	font-weight: bold;
+/* 	text-align: right; */
 }
 
 .decalage_gauche{
@@ -195,27 +136,7 @@ body
 /* 	line-height: 1.5em; */
 }
 
-.info
-{
-	position: relative;
-	color: white;
-	background: black;
-	height: 75px;
-	text-align: center;
-	font-family: Tahoma;
-	font-size: small;
-}
 
-.info span
-{
-	position: relative;
-	top: 60%;
-}
-
-.info span a
-{
-	color: #60d101;
-}
 
 /* definition des infobulles */
 span#infoBulle{
@@ -233,44 +154,4 @@ span#infoBulle{
     transition:all .25s;
     opacity:0;
 	z-index: 1;
-}
-
-/* Agencement des paragraphe a l'interieur des page */
-.paragraphe
-{
-	background: #333333;
-}
-
-/* page d'ACCEUIL */
-#accueil_paragraphe_1
-{
-/* 	height: 125px; */
-	font-size: larger;
-	
-/* 	background: purple; */
-}
-#accueil_paragraphe_1 span
-{
-	position: relative;
-	top: 10%;
-}
-
-#presta_paragraphe_1
-{
-		
-}
-#presta_paragraphe_1 span
-{
-		
-}
-
-.plan
-{
-	color: #0000FF;
-	text-align: left;;
-}
-
-#contact_paragraphe_1 span
-{
-		
 }

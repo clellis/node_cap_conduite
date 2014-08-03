@@ -2,9 +2,11 @@
 
 .tickercontainer { /* the outer div with the black border */
 border: 1px solid #333333;
-background: #60d101; 
+background: #60d101;
+color: #333333 !important;
 width: 2000px; 
-height: 22px; 
+height: 22px;
+margin-left: -25px !important; 
 margin: 0; 
 padding: 0;
 overflow: hidden; 
@@ -19,7 +21,7 @@ overflow: hidden;
 ul.newsticker { /* that's your list */
 position: relative;
 left: 2000px;
-font: normal 1.1em Georgia;
+font: normal 0.9em Georgia;
 list-style-type: none;
 margin: 0;
 padding: 0;
