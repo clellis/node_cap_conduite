@@ -56,43 +56,28 @@ $(function()
 	//////////////////////////////////////////////////////
 	
 	///////////// Fonctions //////////////
-	$(function(){
-	    $("#defilbar").liScroll();
-	});
+	$("#defilbar").liScroll();
 	
 	$("#button_envoyer_mail").click(function(){
 		  $("#row_envoyer_mail").toggle(500);
 	});
 	
-	
-	
+//	$(function(){
+//		var taille_thumbnail_recup = ( 100 * parseFloat($('#thumbnail_recup').css('height')) / parseFloat($('#thumbnail_recup').parent().css('height')) ) + '%';
+//		var taille_thumbnail_b = ( 100 * parseFloat($('#thumbnail_b').css('height')) / parseFloat($('#thumbnail_b').parent().css('height')) ) + '%';
+//		var taille_thumbnail_aac = ( 100 * parseFloat($('#thumbnail_aac').css('height')) / parseFloat($('#thumbnail_aac').parent().css('height')) ) + '%';
+//		
+//		var tailles = [taille_thumbnail_recup, taille_thumbnail_b, taille_thumbnail_aac];
+//		var bonne_taille = tailles[0];
+//	    for (i=0; i<tailles.length; i++){
+//            if (tailles[i] > bonne_taille){
+//                bonne_taille = tailles[i];
+//            }
+//        }
+//		
+//	    $("#thumbnail_b").css("height", bonne_taille);
+//		$("#thumbnail_aac").css("height", bonne_taille);
+//		$("#thumbnail_recup").css("height", bonne_taille);
+//	});
 	////////////////////////////////////
 });
-
-function initBan()
-{
-	//Apparition du premier slogan	
-	$('.titre1').animate({left:"28%"},1000);
-	
-	//Disparition du premier slogan	
-	//$('.titre1').delay(500).fadeOut(1000);
-	
-	//Apparition du deuxieme slogan
-	//jQuery('.titre2').delay(1300).animate({left:"28%"},2000);
-	var temp = 1300;
-	var texte = "Pour une conduite securisée";
-	//Apparition lettre par lettre du deuxieme slogan
-	var extrait = texte.split("");
-	for (i=0; i<extrait.length; i++)
-	{
-		setTimeout("jQuery('.titre2 h3').append('" + extrait[i] + "');",temp);
-		temp+=50;
-	}
-		
-	//Disparition du deuxieme slogan
-	//jQuery('#slog2').delay(2000).fadeOut(1000);
-		
-	//Attribution du style au titre 2
-	$('.titre2').delay(5000).animate({color:"white"},1500);
-	
-}

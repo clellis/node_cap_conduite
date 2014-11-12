@@ -155,3 +155,17 @@ span#infoBulle{
     opacity:0;
 	z-index: 1;
 }
+
+/* .container { */
+/*   display: table; */
+/* } */
+/* .row { */
+/*   display: table-row; */
+/*   height: 100%; */
+/* } */
+/* .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-9, .col-md-10, .col-md-11, .col-md-12 { */
+/*   display: table-cell; */
+/*   float: none; */
+/* } */
+/*
+@media (min-width: 767px) { ... }*/
